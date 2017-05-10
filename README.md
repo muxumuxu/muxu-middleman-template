@@ -1,5 +1,7 @@
 # Default Middleman Project Template
 
-This is the [Middleman] template used when you run `middleman init`.
+This is the [Muxu Middleman] template.
 
-[Middleman]: https://middlemanapp.com/
+```
+middleman init MY_PROJECT -T https://github.com/muxumuxu/muxu-middleman-template
+```

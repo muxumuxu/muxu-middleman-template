@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -15,6 +17,11 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
+
+# Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
