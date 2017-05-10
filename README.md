@@ -3,5 +3,5 @@
 This is the [Muxu Middleman] template.
 
 ```
-middleman init MY_PROJECT -T https://github.com/muxumuxu/muxu-middleman-template
+middleman init MY_PROJECT -T git@github.com:muxumuxu/muxu-middleman-template.git
 ```
