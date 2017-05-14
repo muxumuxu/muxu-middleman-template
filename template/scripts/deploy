@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
+git checkout gh-pages
+
 bundle exec middleman build --build-dir=docs
 
-git checkout master
 git add .
 git commit -m "Deploy website"
-git push -f origin master
+git push -f origin gh-pages
