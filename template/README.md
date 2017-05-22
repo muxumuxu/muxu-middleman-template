@@ -1,4 +1,4 @@
-# Static landing page with i18n
+# Static landing page with i18n/Sass/Slim
 
 ## Configure
 
@@ -13,17 +13,8 @@ bundle install
 bundle exec middleman
 ```
 
-## Add collaborator to surge
-
-```
-bundle exec middleman
-cd build
-surge -a <email> -d [name]-landing-page.surge.sh -p .
-```
-
 ## Deployment
 
 ```
-chmod +x deploy.sh (only first time)
-./deploy.sh
+bundle exec middleman deploy
 ```
