@@ -11,9 +11,9 @@ module Middleman
     end
 
     def git_setup
-	    git :init
-		  git add: "."
-		  git commit: %Q{ -m "Initial Middleman app" }
+      %x(git init)
+      %x(git add --all)
+      %x(git commit -m "Initial Muxu.Muxu middleman app")
     end
   end
 end
