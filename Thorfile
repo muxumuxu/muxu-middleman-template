@@ -9,11 +9,5 @@ module Middleman
     def copy_default_files
       directory 'template', '.', exclude_pattern: /\.DS_Store$/
     end
-
-    def git_setup
-      %x(git init)
-      %x(git add --all)
-      %x(git commit -m "Initial Muxu.Muxu middleman app")
-    end
   end
 end
